@@ -11,7 +11,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class UsuarioService implements ProductoRepository {
+public class ProductoService implements ProductoRepository {
 
     private final ProductoPersistence productoPersistence;
 
