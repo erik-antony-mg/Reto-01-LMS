@@ -15,7 +15,7 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "producto_id")
     Long productoId;
-    @NotBlank
+    @NotBlank(message = "el campo nombre no debe estar vacio")
     String nombre;
     String descripcion;
     @Pattern(regexp = "^[0-9]+(\\.[0-9]+)?$" ,message = "solo aceptan numeros y un formato como 12.5")
